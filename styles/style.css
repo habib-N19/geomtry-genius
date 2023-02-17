@@ -1,0 +1,50 @@
+* { 
+    /* border: 1px solid red !important; */
+    font-family: 'Inter', sans-serif;
+    }
+
+    :root{
+        --primary-text:rgba(17, 17, 17, 0.8);
+        --secondary-text:rgba(17, 17, 17, 0.6);
+        --card-text: #414141;
+
+    }
+    .btn-primary{
+        background-color:#1090D8;;
+        border-radius: 8px;
+        color: #ffffff;
+    }
+
+    .btn-primary:hover{
+        background-color: #108fd8d2;
+    }
+
+    header {
+        background-color: rgba(16, 144, 216, 0.1);
+     
+    }
+    .header-title{
+        color: var(--primary-text) ;
+    }
+    .header-subtitle {
+        color: var(--secondary-text);
+    }
+
+    .card-item{
+        border: 1px solid rgba(17, 17, 17, 0.1);
+    
+    }
+    /* #card-calculation * img{
+        height: fit-content;
+
+    } */
+    .card-text-clr{
+        color: var(--card-text);
+    }
+
+    input {
+        background-color: #F1F1F1;
+    }
+    input:hover{
+        background-color: #ffffff;
+    }
