@@ -26,204 +26,243 @@
 				<p class="text-2xl pt-2 header-subtitle">Geometry Genius</p>
 			</div>
 			<div>
-				<button class="text-2xl btn-primary px-3 py-2">Blog</button>
+				<button class="text-2xl btn-primary px-3 py-2">
+					<a href="blog.html">Blog</a>
+				</button>
 			</div>
 		</header>
 		<main>
 			<!-- geometry cards -->
 			<section>
-				<div class="w-11/12 mx-auto">
-					<div id="card-calculation" class="grid grid-cols-3 gap-4 w-3/4">
-						<!-- card-1-->
-						<div id="triangle-card" class="text-center card-item card-text-clr">
-							<div class="card-img-container mt-8 mb-5">
-								<img class="mx-auto" src="styles/images/triangle.png" alt="" />
+				<div class="w-11/12 mx-auto flex gap-4">
+					<div class="basis-3/4">
+						<div id="card-calculation" class="grid grid-cols-3 gap-4">
+							<!-- card-1-->
+							<div
+								id="triangle-card"
+								class="text-center card-item card-text-clr"
+							>
+								<div class="card-img-container mt-8 mb-5">
+									<img
+										class="mx-auto"
+										src="styles/images/triangle.png"
+										alt=""
+									/>
+								</div>
+								<h4 class="card-title font-bold text-2xl">Triangle</h4>
+								<p class="card-eqn my-4">
+									Area(A) =0.5 <span>&#215;</span> b <span>&#215;</span> h
+								</p>
+								<div class="flex mx-auto w-2/3">
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="b"
+									/>
+									<p class="pr-4 pl-1">cm</p>
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="h"
+									/>
+									<p class="pl-1">cm</p>
+								</div>
+								<button class="btn-primary w-10/12 my-5 py-4 font-bold">
+									Calculate
+								</button>
 							</div>
-							<h4 class="card-title font-bold text-2xl">Triangle</h4>
-							<p class="card-eqn my-4">
-								Area(A) =0.5 <span>&#215;</span> b <span>&#215;</span> h
-							</p>
-							<div class="flex mx-auto w-2/3">
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="b"
-								/>
-								<p class="pr-4 pl-1">cm</p>
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="h"
-								/>
-								<p class="pl-1">cm</p>
+							<!-- card-2 -->
+							<div
+								id="rectangle-card"
+								class="text-center card-item card-text-clr"
+							>
+								<div class="card-img-container mt-8 mb-5">
+									<img
+										class="mx-auto"
+										src="styles/images/rectangle.png"
+										alt=""
+									/>
+								</div>
+								<h4 class="card-title font-bold text-2xl">rectangle</h4>
+								<p class="card-eqn my-4">Area(A) = w <span>&#215;</span> l</p>
+								<div class="flex mx-auto w-2/3">
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="w"
+									/>
+									<p class="pr-4 pl-1">cm</p>
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="l"
+									/>
+									<p class="pl-1">cm</p>
+								</div>
+								<button class="btn-primary w-10/12 my-5 py-4 font-bold">
+									Calculate
+								</button>
 							</div>
-							<button class="btn-primary w-10/12 my-5 py-4 font-bold">
-								Calculate
-							</button>
+							<!-- card- 3-->
+							<div
+								id="parallelogram-card"
+								class="text-center card-item card-text-clr"
+							>
+								<div class="card-img-container mt-8 mb-5">
+									<img
+										class="mx-auto"
+										src="styles/images/parallelogram.png"
+										alt=""
+									/>
+								</div>
+								<h4 class="card-title font-bold text-2xl">Parallelogram</h4>
+								<p class="card-eqn my-4">Area(A) = b <span>&#215;</span> h</p>
+								<div class="flex mx-auto w-2/3">
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="b"
+									/>
+									<p class="pr-4 pl-1">cm</p>
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="h"
+									/>
+									<p class="pl-1">cm</p>
+								</div>
+								<button class="btn-primary w-10/12 my-5 py-4 font-bold">
+									Calculate
+								</button>
+							</div>
+							<!-- card- 4-->
+							<div
+								id="rhombus-card"
+								class="text-center card-item card-text-clr"
+							>
+								<div class="card-img-container mt-8 mb-5">
+									<img class="mx-auto" src="styles/images/rhombus.png" alt="" />
+								</div>
+								<h4 class="card-title font-bold text-2xl">Rhombus</h4>
+								<p class="card-eqn my-4">
+									Area(A) =0.5 <span>&#215;</span> d<sub>1</sub>
+									<span>&#215;</span> d<sub>2</sub>
+								</p>
+								<div class="flex mx-auto w-2/3">
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="d1"
+									/>
+									<p class="pr-4 pl-1">cm</p>
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="d2"
+									/>
+									<p class="pl-1">cm</p>
+								</div>
+								<button class="btn-primary w-10/12 my-5 py-4 font-bold">
+									Calculate
+								</button>
+							</div>
+							<!-- card- 5-->
+							<div
+								id="pentagon-card"
+								class="text-center card-item card-text-clr"
+							>
+								<div class="card-img-container mt-8 mb-5">
+									<img
+										class="mx-auto"
+										src="styles/images/pentagon.png"
+										alt=""
+									/>
+								</div>
+								<h4 class="card-title font-bold text-2xl">Pentagon</h4>
+								<p class="card-eqn my-4">
+									Area(A) =0.5 <span>&#215;</span> p <span>&#215;</span> b
+								</p>
+								<div class="flex mx-auto w-2/3">
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="p"
+									/>
+									<p class="pr-4 pl-1">cm</p>
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="b"
+									/>
+									<p class="pl-1">cm</p>
+								</div>
+								<button class="btn-primary w-10/12 my-5 py-4 font-bold">
+									Calculate
+								</button>
+							</div>
+							<!-- card- 6-->
+							<div
+								id="ellipse-card"
+								class="text-center card-item card-text-clr"
+							>
+								<div class="card-img-container mt-8 mb-5">
+									<img class="mx-auto" src="styles/images/ellipse.png" alt="" />
+								</div>
+								<h4 class="card-title font-bold text-2xl">Ellipse</h4>
+								<p class="card-eqn my-4">Area(A) = <span>&#960;</span>ab</p>
+								<div class="flex mx-auto w-2/3">
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="a"
+									/>
+									<p class="pr-4 pl-1">cm</p>
+									<input
+										class="w-1/3"
+										type="text"
+										name=""
+										id=""
+										placeholder="b"
+									/>
+									<p class="pl-1">cm</p>
+								</div>
+								<button class="btn-primary w-10/12 my-5 py-4 font-bold">
+									Calculate
+								</button>
+							</div>
 						</div>
-						<!-- card-2 -->
-						<div
-							id="rectangle-card"
-							class="text-center card-item card-text-clr"
-						>
-							<div class="card-img-container mt-8 mb-5">
-								<img class="mx-auto" src="styles/images/rectangle.png" alt="" />
-							</div>
-							<h4 class="card-title font-bold text-2xl">rectangle</h4>
-							<p class="card-eqn my-4">Area(A) = w <span>&#215;</span> l</p>
-							<div class="flex mx-auto w-2/3">
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="w"
-								/>
-								<p class="pr-4 pl-1">cm</p>
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="l"
-								/>
-								<p class="pl-1">cm</p>
-							</div>
-							<button class="btn-primary w-10/12 my-5 py-4 font-bold">
-								Calculate
-							</button>
-						</div>
-						<!-- card- 3-->
-						<div
-							id="parallelogram-card"
-							class="text-center card-item card-text-clr"
-						>
-							<div class="card-img-container mt-8 mb-5">
-								<img
-									class="mx-auto"
-									src="styles/images/parallelogram.png"
-									alt=""
-								/>
-							</div>
-							<h4 class="card-title font-bold text-2xl">Parallelogram</h4>
-							<p class="card-eqn my-4">Area(A) = b <span>&#215;</span> h</p>
-							<div class="flex mx-auto w-2/3">
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="b"
-								/>
-								<p class="pr-4 pl-1">cm</p>
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="h"
-								/>
-								<p class="pl-1">cm</p>
-							</div>
-							<button class="btn-primary w-10/12 my-5 py-4 font-bold">
-								Calculate
-							</button>
-						</div>
-						<!-- card- 4-->
-						<div id="rhombus-card" class="text-center card-item card-text-clr">
-							<div class="card-img-container mt-8 mb-5">
-								<img class="mx-auto" src="styles/images/rhombus.png" alt="" />
-							</div>
-							<h4 class="card-title font-bold text-2xl">Rhombus</h4>
-							<p class="card-eqn my-4">
-								Area(A) =0.5 <span>&#215;</span> d<sub>1</sub>
-								<span>&#215;</span> d<sub>2</sub>
-							</p>
-							<div class="flex mx-auto w-2/3">
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="d1"
-								/>
-								<p class="pr-4 pl-1">cm</p>
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="d2"
-								/>
-								<p class="pl-1">cm</p>
-							</div>
-							<button class="btn-primary w-10/12 my-5 py-4 font-bold">
-								Calculate
-							</button>
-						</div>
-						<!-- card- 5-->
-						<div id="pentagon-card" class="text-center card-item card-text-clr">
-							<div class="card-img-container mt-8 mb-5">
-								<img class="mx-auto" src="styles/images/pentagon.png" alt="" />
-							</div>
-							<h4 class="card-title font-bold text-2xl">Pentagon</h4>
-							<p class="card-eqn my-4">
-								Area(A) =0.5 <span>&#215;</span> p <span>&#215;</span> b
-							</p>
-							<div class="flex mx-auto w-2/3">
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="p"
-								/>
-								<p class="pr-4 pl-1">cm</p>
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="b"
-								/>
-								<p class="pl-1">cm</p>
-							</div>
-							<button class="btn-primary w-10/12 my-5 py-4 font-bold">
-								Calculate
-							</button>
-						</div>
-						<!-- card- 6-->
-						<div id="ellipse-card" class="text-center card-item card-text-clr">
-							<div class="card-img-container mt-8 mb-5">
-								<img class="mx-auto" src="styles/images/ellipse.png" alt="" />
-							</div>
-							<h4 class="card-title font-bold text-2xl">Ellipse</h4>
-							<p class="card-eqn my-4">Area(A) = <span>&#960;</span>ab</p>
-							<div class="flex mx-auto w-2/3">
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="a"
-								/>
-								<p class="pr-4 pl-1">cm</p>
-								<input
-									class="w-1/3"
-									type="text"
-									name=""
-									id=""
-									placeholder="b"
-								/>
-								<p class="pl-1">cm</p>
-							</div>
-							<button class="btn-primary w-10/12 my-5 py-4 font-bold">
-								Calculate
-							</button>
+					</div>
+
+					<!--calculation area -->
+					<div class="basis-1/4">
+						<div>
+							<h3
+								class="underline text-center font-bold text-2xl header-title pt-7"
+							>
+								Area Calculation
+							</h3>
 						</div>
 					</div>
 				</div>
