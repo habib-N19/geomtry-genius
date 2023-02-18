@@ -5,24 +5,88 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Blogs</title>
+		<!-- tailwind  -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- inter google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- vanilla css -->
+		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
-		<h1>
-			১) What is DOM and what is the purpose of DOM? ২) How will you select HTML
-			elements using DOM? Name the DOM methods. ৩) What is event bubble? ৪) What
-			is a callback function and why will you use it?
-		</h1>
-
-		<p> Q-1
-			DOM(document object model) is a way of organizing every element of a
-			website. We can compare it with a tree where every branch is a part of tree and every html element (heading, paragraph, form, input, etc) is a part of DOM model. 
-            <p>
-                purpose of dom - dom is the way to tell the browser of the structure of a website. Dom makes sites more accessible. By using dom we can control every element of a website and interact with the website.
-            </p>
-		</p>
-        <p>
-            Q-2
-            
-        </p>
+		<header class="text-5xl text-center py-10 font-semibold">
+			Assignment Questions & Answers
+		</header>
+		<main>
+			<section class="w-2/4 mx-auto mt-10 border px-10 rounded">
+				<article>
+					<!-- question 1 -->
+					<h4 class="font-semibold text-3xl mb-5">
+						Q:What is DOM and what is the purpose of DOM?
+					</h4>
+					<p class=""><span class="font-bold">Answer:</span>
+					<p class="pt-3">DOM(document object model) is a way of organizing every element of a
+						website. We can compare it with a tree where every branch is a part of tree and every html element (heading, paragraph, form, input, etc) is a part of DOM model.</p>
+						<p><span class="font-semibold">Purpose of DOM</span> - dom is the way to tell the browser of the structure of a website. Dom makes sites more accessible. By using dom we can control every element of a website and interact with the website.</p>
+					</p>
+					</article>
+					<!-- question-2 -->
+					<article><h4 class="font-semibold text-3xl mt-8 mb-5">
+						Q:How will you select HTML elements using DOM? Name the DOM methods.
+					</h4>
+					<p class=""><span class="font-bold">Answer:</span>
+					<p class="pt-3">There are a various way of selecting and manipulating html elements using DOM of Javascript.Mainly 5 elements of dom selector available</p>
+					<ul class="list-disc pl-5 pt-3 pb-2"><li>getElementById()</li>
+					<li>getElementsByTagName()</li>
+					<li>getElementsByClassName()</li>
+					<li>querySelector()</li>
+					<li>querySelectorAll()</li></ul>
+						<p>The method of using these selectors are given bellow:
+							To use a selector we need to add the prefix of the document of which we are trying to select using the selector.</p>
+							<p class="pt-2">Methods are</p>
+							<ul class="list-disc pl-5 pt-3 pb-2">
+								<li>document.getElementById()</li>
+								<li>document.getElementsByTagName()</li>
+								<li>document.getElementsByClassName()</li>
+								<li>document.querySelector()</li>
+								<li>document.querySelectorAll()</li>
+							</ul>
+							<p>Here inside the parenthesis () we have to insert the id name or the relatable element name which we are trying to get.<br>
+								<span  class="font-semibold">Example:</span>
+								If we are trying to get an tag selector of <span  class="font-semibold">h1</span> then the method is
+								<code>document.getElementsByTagName('h1')</code></p>
+					</p></article>
+					<!-- question 3 -->
+					<article>
+						<h4 class="font-semibold text-3xl mt-8 mb-5">
+							Q:What is event bubble?
+						</h4>
+						<p class=""><span class="font-bold">Answer:</span>
+						<p class="pt-3">Event bubble is a method of javascript DOM model to assign rules or conditions to multiple child element of a parent element.</p>
+						<p class="pt-3">We can compare it with a branch of a tree but this time it is going backwards.
+							Meaning- 
+							Let's assume we have an unordered list. If we add an event listeners to the list items then it will propagate to the parent tag. If we click on the list item it also means we clicked on the list.
+							If we have a div and inside that div if we have a button, then clicking button means also clicking or adding event listeners to the div element.
+							<p>Point to be noted that if a parent element has multiple child element and we use event listeners to a particular child then the other child will not be triggered.</p>
+						</p>
+					</article>
+					<!-- q-4 -->
+					<article class="mb-20">
+						<h4 class="font-semibold text-3xl mt-8 mb-5">
+							Q:What is a callback function and why will you use it?
+						</h4>
+						<p class=""><span class="font-bold">Answer:</span>
+						<p class="pt-3">Javascript runs as interpreter language. Meaning it reads codes from top to bottom. Callback functions are used as an function argument to execute in later stage.Because as an asynchronous language , the interpreter will not stop for executing a function. To make some delay in the function we use callback function.It runs in the background while other code runs.
+						<p class="pt-3">In simple form we can say if we have a function that just shows an output on the console after some time then we can make that function outside of the main function and then call that function as an argument in the main function</p>
+						<p class="pt-3">Here we can see we are executing the first function but it will be executed as we define inside the callback function.</p>
+						</p>
+				</article>
+			</section>
+		</main>
+		<footer></footer>
 	</body>
 </html>

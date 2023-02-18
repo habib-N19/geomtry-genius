@@ -34,9 +34,14 @@
 		<main>
 			<!-- geometry cards -->
 			<section>
-				<div class="w-11/12 mx-auto flex gap-4">
+				<div
+					class="w-11/12 sm:flex sm:w-11/12 mx-auto gap-4 sm:flex-col md:flex-row"
+				>
 					<div class="basis-3/4">
-						<div id="card-calculation" class="grid grid-cols-3 gap-4">
+						<div
+							id="card-calculation"
+							class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+						>
 							<!-- card-1-->
 							<div
 								id="triangle-card"
@@ -281,7 +286,7 @@
 							>
 								Area Calculation
 							</h3>
-							<div class="w-full card-text-clr">
+							<div class="w-full card-text-clr px-2">
 								<!-- <p id="class" class="hidden">cm<sup>2</sup></p> -->
 								<table class="table-auto w-full">
 									<thead>
@@ -292,7 +297,7 @@
 											<th>Conversion</th>
 										</tr>
 									</thead>
-									<tbody id="table-container" class="text-center"></tbody>
+									<tbody id="table-container" class="text-start"></tbody>
 								</table>
 							</div>
 						</div>

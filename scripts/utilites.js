@@ -8,6 +8,8 @@ function getInputValueByID(input1, input2) {
     const inputValue2 = parseFloat(inputField2String);
     if (isNaN(inputValue1) || inputValue1 <= 0 || isNaN(inputValue2) || inputValue2 <= 0) {
         alert('Please enter valid numbers');
+        inputField1.value = '';
+        inputField2.value = '';
         return null;
     }
     const inputFieldsValueTotal = inputValue1 * inputValue2;
