@@ -55,7 +55,7 @@
 								</p>
 								<div class="flex mx-auto w-2/3">
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
 										id="b-value-triangle"
@@ -63,7 +63,7 @@
 									/>
 									<p class="pr-4 pl-1">cm</p>
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
 										id="h-value-triangle"
@@ -94,18 +94,18 @@
 								<p class="card-eqn my-4">Area(A) = w <span>&#215;</span> l</p>
 								<div class="flex mx-auto w-2/3">
 									<input
-										class="w-1/3"
-										type="text"
+										class="w-1/3 px-2"
+										type="text "
 										name=""
-										id=""
+										id="w-value-rectangle"
 										placeholder="w"
 									/>
 									<p class="pr-4 pl-1">cm</p>
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
-										id=""
+										id="l-value-rectangle"
 										placeholder="l"
 									/>
 									<p class="pl-1">cm</p>
@@ -133,18 +133,18 @@
 								<p class="card-eqn my-4">Area(A) = b <span>&#215;</span> h</p>
 								<div class="flex mx-auto w-2/3">
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
-										id=""
+										id="b-value-parallelogram"
 										placeholder="b"
 									/>
 									<p class="pr-4 pl-1">cm</p>
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
-										id=""
+										id="h-value-parallelogram"
 										placeholder="h"
 									/>
 									<p class="pl-1">cm</p>
@@ -171,18 +171,18 @@
 								</p>
 								<div class="flex mx-auto w-2/3">
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
-										id=""
+										id="d1-value-rhombus"
 										placeholder="d1"
 									/>
 									<p class="pr-4 pl-1">cm</p>
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
-										id=""
+										id="d2-value-rhombus"
 										placeholder="d2"
 									/>
 									<p class="pl-1">cm</p>
@@ -212,18 +212,18 @@
 								</p>
 								<div class="flex mx-auto w-2/3">
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
-										id=""
+										id="p-value-pentagon"
 										placeholder="p"
 									/>
 									<p class="pr-4 pl-1">cm</p>
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
-										id=""
+										id="b-value-pentagon"
 										placeholder="b"
 									/>
 									<p class="pl-1">cm</p>
@@ -247,18 +247,18 @@
 								<p class="card-eqn my-4">Area(A) = <span>&#960;</span>ab</p>
 								<div class="flex mx-auto w-2/3">
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
-										id=""
+										id="a-value-ellipse"
 										placeholder="a"
 									/>
 									<p class="pr-4 pl-1">cm</p>
 									<input
-										class="w-1/3"
+										class="w-1/3 px-2"
 										type="text"
 										name=""
-										id=""
+										id="b-value-ellipse"
 										placeholder="b"
 									/>
 									<p class="pl-1">cm</p>
@@ -275,12 +275,26 @@
 
 					<!--calculation area -->
 					<div class="basis-1/4">
-						<div>
+						<div class="card-item h-2/4">
 							<h3
 								class="underline text-center font-bold text-2xl header-title pt-7"
 							>
 								Area Calculation
 							</h3>
+							<div class="w-full card-text-clr">
+								<!-- <p id="class" class="hidden">cm<sup>2</sup></p> -->
+								<table class="table-auto w-full">
+									<thead>
+										<tr>
+											<th>SL.</th>
+											<th>Name</th>
+											<th>Result</th>
+											<th>Conversion</th>
+										</tr>
+									</thead>
+									<tbody id="table-container" class="text-center"></tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
