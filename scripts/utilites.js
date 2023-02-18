@@ -21,16 +21,21 @@ function getInputValueByID(input1, input2) {
 
 // function for showing result on the side section
 function displayResult(name, result) {
-    const tableContainer = document.getElementById('table-container');
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
+    if (result === null) {
+        return;
+    }
+    else {
+        const tableContainer = document.getElementById('table-container');
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
     <td>${serial} </td>
     <td>${name} </td>
     <td>${result} cm<sup>2</sup> </td>
     <td><button class="convert-button" > m<sup>2</sup> </button/></td>
     
     `
-    tableContainer.appendChild(tr);
+        tableContainer.appendChild(tr);
+    }
 
 }
 

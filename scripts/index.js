@@ -8,6 +8,7 @@ document.getElementById('triangle-calc-btn').addEventListener('click', function 
     const areaTotal = 0.5 * inputFieldsValues;
     const areaValue = parseFloat(areaTotal).toFixed(2);
     if (inputFieldsValues === null) {
+        serial -= 1;
         return;
     }
     displayResult(name, areaValue);
@@ -23,6 +24,7 @@ document.getElementById('rectangle-calc-btn').addEventListener('click', function
     const areaTotal = inputFieldsValues;
     const area = parseFloat(areaTotal).toFixed(2);
     if (inputFieldsValues === null) {
+        serial -= 1;
         return;
     }
     displayResult(name, area);
@@ -36,6 +38,7 @@ document.getElementById('parallelogram-calc-btn').addEventListener('click', func
     const areaTotal = inputFieldsValues;
     const area = parseFloat(areaTotal).toFixed(2);
     if (inputFieldsValues === null) {
+        serial -= 1;
         return;
     }
     displayResult(name, area);
@@ -49,6 +52,7 @@ document.getElementById('rhombus-calc-btn').addEventListener('click', function (
     const areaTotal = 0.5 * inputFieldsValues;
     const area = parseFloat(areaTotal).toFixed(2);
     if (inputFieldsValues === null) {
+        serial -= 1;
         return;
     }
     displayResult(name, area);
@@ -61,6 +65,7 @@ document.getElementById('pentagon-calc-btn').addEventListener('click', function 
     const areaTotal = 0.5 * inputFieldsValues;
     const area = parseFloat(areaTotal).toFixed(2);
     if (inputFieldsValues === null) {
+        serial -= 1;
         return;
     }
     displayResult(name, area);
@@ -73,6 +78,7 @@ document.getElementById('ellipse-calc-btn').addEventListener('click', function (
     const areaTotal = 3.14 * inputFieldsValues;
     const area = parseFloat(areaTotal).toFixed(2);
     if (inputFieldsValues === null) {
+        serial -= 1;
         return;
     }
     displayResult(name, area);
