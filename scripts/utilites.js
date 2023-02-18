@@ -6,11 +6,13 @@ function getInputValueByID(input1, input2) {
     const inputField2 = document.getElementById(input2);
     const inputField2String = inputField2.value;
     const inputValue2 = parseFloat(inputField2String);
-
     if (isNaN(inputValue1) || inputValue1 <= 0 || isNaN(inputValue2) || inputValue2 <= 0) {
-        return alert('Please enter valid numbers')
+        alert('Please enter valid numbers');
+        return null;
     }
     const inputFieldsValueTotal = inputValue1 * inputValue2;
+    inputField1.value = '';
+    inputField2.value = '';
     return inputFieldsValueTotal;
 
 }
@@ -29,3 +31,5 @@ function displayResult(name, result) {
     tableContainer.appendChild(tr);
 
 }
+
+

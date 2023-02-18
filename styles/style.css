@@ -53,6 +53,11 @@ input:hover {
     background-color: #ffffff;
 }
 
+.result-card {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 8px;
+}
+
 .convert-button {
     background-color: #1090D8;
     padding: 2px 20px;
